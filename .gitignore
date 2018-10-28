@@ -13,5 +13,4 @@ buildNumber.properties
 .idea
 *.iml
 node_modules
-webapp
 src/main/resources/static
