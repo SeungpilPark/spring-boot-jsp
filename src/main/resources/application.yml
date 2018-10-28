@@ -1,0 +1,28 @@
+#############################################################################
+# Spring boot Port setting
+#############################################################################
+server:
+  port: 9001
+  servlet:
+    session:
+      timeout: 3600 # Session timeout. If a duration suffix is not specified, seconds will be used.
+
+spring:
+  security:
+    user:
+      password: password
+      name: user
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on-save
+      namespace: spring:session
+  redis:
+    host: localhost
+    password:
+    port: 6380
