@@ -12,9 +12,9 @@ import org.springframework.session.web.http.HttpSessionIdResolver;
 @Configuration
 public class SessionConfig {
 
-    @Bean
-    public HttpSessionIdResolver httpSessionIdResolver() {
-
-        return HeaderHttpSessionIdResolver.xAuthToken();
-    }
+//    @Bean
+//    public HttpSessionIdResolver httpSessionIdResolver() {
+//
+//        return HeaderHttpSessionIdResolver.xAuthToken();
+//    }
 }
